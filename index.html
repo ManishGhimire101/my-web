@@ -232,9 +232,9 @@
               free to contact me. I will get back to you as soon as possible.
             </p>
             <form
-              action="ghimiremanish370@gmail.com"
-              method="post"
-              aria-label="Contact form"
+             id="contact-form"
+              method="POST"
+              aria-label="Contact form to reach Manish Ghimire"
             >
               <div class="message">
                 <input
@@ -368,6 +368,30 @@
           x.className = "topnav";
         });
       });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("7_U1ut4d7a9mG0iss");
+      })();
+    </script>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs.sendForm("service_iuatuje", "template_84j0kdo", this).then(
+            function () {
+              alert("Message sent successfully!");
+            },
+            function (error) {
+              alert("Failed to send message!");
+              console.log(error);
+            }
+          );
+        });
     </script>
   </body>
 </html>
