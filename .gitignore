@@ -1,0 +1,21 @@
+# Old image folder
+image/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Node modules (if applicable)
+node_modules/
+package-lock.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled files
+dist/
+build/
