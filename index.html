@@ -91,6 +91,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/logo.png"
+      sizes="32x32"
+    />
   </head>
   <body>
     <header>
@@ -261,9 +267,8 @@
                 required
                 aria-label="Your message"
               ></textarea>
-              <button type="submit" title="Send message to Manish Ghimire">
-                Send Message
-              </button>
+              <button id="button" type="submit" title="Send message to Manish Ghimire" value="Send Message">
+                Send Message</button>
             </form>
           </div>
           <div class="contact-box">
@@ -377,21 +382,31 @@
       })();
     </script>
     <script>
+      const btn = document.getElementById('button');
+      console.log(btn.value);
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+           btn.innerHTML = 'Sending...';
+          
 
-          emailjs.sendForm("service_iuatuje", "template_84j0kdo", this).then(
+          emailjs.sendForm("service_iuatuje", "template_n4vqq8l", this).then(
             function () {
-              alert("Message sent successfully!");
+             
+              document.getElementById("contact-form").reset();
+              btn.innerHTML = 'Sent Successfully';
+             
             },
             function (error) {
               alert("Failed to send message!");
               console.log(error);
+              btn.innerHTML = 'Resend Message';
+              
             }
           );
         });
+        
     </script>
   </body>
 </html>
