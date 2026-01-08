@@ -501,7 +501,7 @@ textarea::placeholder {
   }
   .img1 {
     position: relative;
-    top: -70vh;
+    top: -78vh;
   }
   img.img2 {
     display: none;
@@ -546,6 +546,12 @@ textarea::placeholder {
   }
   i {
     margin: auto 1rem;
+  }
+}
+@media (max-width: 390px){
+.img1 {
+    position: relative;
+    top: -88vh;
   }
 }
 /* responsive nav bar */
