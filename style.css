@@ -51,7 +51,7 @@ header nav span ul {
   padding: 3px;
   text-decoration: none;
   font-size: large;
- 
+
   text-align: center;
 }
 .cv:hover {
@@ -139,7 +139,9 @@ main section div div h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  
 }
 .name {
   display: block;
@@ -238,7 +240,7 @@ button:hover {
   background-color: rgb(38, 37, 37);
   border: 1px solid #db5856;
   border-radius: 4px;
- 
+
   text-decoration: none;
   transition: 1s;
 }
@@ -349,12 +351,65 @@ textarea::placeholder {
   font: large sans-serif;
 }
 .message {
-  
   flex-direction: column;
   width: 99%;
   padding: 10px 0px;
- 
 }
+.img1 {
+  position: relative;
+  margin-left: 5px;
+}
+.name{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid blueviolet;
+  animation: 
+  typewriter 2s steps(13) forwards,
+  cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50%{
+    border-right-color: transparent;
+  }
+}
+@keyframes typewriter{
+  from{
+    width: 0;
+  }
+  to{
+    width: 8em;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.img1:hover {
+ 
+  background-image: conic-gradient(from var(--angle), rgb(255, 7, 48), rgb(174, 0, 255), rgb(0, 255, 47));
+  z-index: 1;
+  padding: 5px;
+  border: 10px;
+  
+  animation: 3s spin infinite linear;
+  border-radius: 50%;
+}
+@keyframes spin {
+  from{
+    --angle: 0deg;
+
+  }
+  to{
+     --angle: 360deg;
+
+  }
+}
+.img1:hover {
+  box-shadow: 0 0 20px rgba(69, 231, 91, 0.6);
+}
+
 /* for 1080px */
 @media (max-width: 1080px) {
   body {
@@ -424,7 +479,6 @@ textarea::placeholder {
     font-size: medium;
   }
   input {
-    
     margin-bottom: 5px;
   }
   textarea {
@@ -501,7 +555,7 @@ textarea::placeholder {
   }
   .img1 {
     position: relative;
-    top: -70vh;
+    top: -78vh;
   }
   img.img2 {
     display: none;
@@ -546,6 +600,12 @@ textarea::placeholder {
   }
   i {
     margin: auto 1rem;
+  }
+}
+@media (max-width: 390px) {
+  .img1 {
+    position: relative;
+    top: -88vh;
   }
 }
 /* responsive nav bar */
