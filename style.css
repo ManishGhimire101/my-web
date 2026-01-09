@@ -605,7 +605,7 @@ textarea::placeholder {
 @media (max-width: 390px) {
   .img1 {
     position: relative;
-    top: -88vh;
+    top: -82vh;
   }
 }
 /* responsive nav bar */
