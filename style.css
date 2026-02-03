@@ -370,6 +370,7 @@ textarea::placeholder {
 .img1 {
   position: relative;
   margin-left: 5px;
+  border-radius: 50%;
 }
 .name {
   display: inline-block;
@@ -697,5 +698,110 @@ textarea::placeholder {
     display: block;
     text-align: left;
     height: 50px;
+  }
+}
+
+/* Gallery Section Styles */
+#gallery {
+  background-color: rgb(38, 37, 37);
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.gallery-container {
+  width: 80vw;
+  margin: auto;
+  color: white;
+}
+
+.gallery-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.gallery-card {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(138, 43, 226, 0.4);
+}
+
+.card-thumbnail {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .card-thumbnail img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+
+.card-content p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design for Gallery */
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .gallery-container {
+    width: 90vw;
+  }
+  
+  .gallery-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card-thumbnail {
+    height: 180px;
   }
 }
