@@ -109,7 +109,6 @@ main section div {
   width: 80vw;
   margin: auto;
   padding-top: 10vh;
- 
 }
 .contact-info {
   margin: 0%;
@@ -198,7 +197,6 @@ footer p {
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.3px;
-  
 }
 input {
   display: block;
@@ -377,7 +375,8 @@ textarea::placeholder {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid blueviolet;
-  animation: typewriter 2s steps(13) forwards,
+  animation:
+    typewriter 2s steps(13) forwards,
     cursor 0.4s step-end infinite alternate;
 }
 @keyframes cursor {
@@ -456,7 +455,7 @@ textarea::placeholder {
   form {
     margin: 0;
   }
-  
+
   .contact-info i {
     font-size: large;
   }
@@ -468,7 +467,6 @@ textarea::placeholder {
     font-size: 1rem;
     width: 100%;
     padding: 10px 0px;
- 
   }
   .last {
     width: auto;
@@ -499,7 +497,7 @@ textarea::placeholder {
     height: auto;
     width: auto;
   }
-   
+
   .message {
     display: flex;
     flex-direction: row !important;
@@ -560,17 +558,17 @@ textarea::placeholder {
   }
 }
 @media (min-width: 500px) and (max-width: 768px) {
-  input{
+  input {
     width: 100%;
   }
-      .footer {
-        flex-direction: column;
-        height: 4.4em;
-        display: flex;
-        text-align: center;
-        /* align-items: center; */
-        justify-content: center;
-    }
+  .footer {
+    flex-direction: column;
+    height: 4.4em;
+    display: flex;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .footer {
@@ -581,11 +579,11 @@ textarea::placeholder {
     /* align-items: center; */
     justify-content: center;
   }
-  input{
+  input {
     padding: 5px 0;
     margin: 2px 0;
   }
-  .message{
+  .message {
     flex-direction: column !important;
     width: 99%;
     padding: 10px 0px;
@@ -601,7 +599,6 @@ textarea::placeholder {
     font-size: 30px;
     float: right;
   }
-  
 
   .sec-img {
     display: none;
@@ -709,7 +706,7 @@ textarea::placeholder {
 }
 
 .gallery-container {
-  width: 80vw;
+  width: 50vw;
   margin: auto;
   color: white;
 }
@@ -733,7 +730,9 @@ textarea::placeholder {
   background-color: #2a2a2a;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   text-decoration: none;
   color: white;
   display: block;
@@ -753,9 +752,9 @@ textarea::placeholder {
 }
 
 .card-thumbnail img {
-  width: 100%;
+  width: calc(100% - 5%);
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.3s ease;
 }
 
@@ -764,7 +763,9 @@ textarea::placeholder {
 }
 
 .card-content {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 .card-content h3 {
@@ -785,11 +786,11 @@ textarea::placeholder {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
   }
-  
+
   .gallery-container {
     width: 90vw;
   }
-  
+
   .gallery-container h1 {
     font-size: 2rem;
   }
@@ -800,7 +801,7 @@ textarea::placeholder {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .card-thumbnail {
     height: 180px;
   }

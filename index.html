@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -91,12 +91,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/images/logo.png"
-      sizes="32x32"
-    />
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="32x32" />
   </head>
   <body>
     <header>
@@ -229,14 +224,23 @@
       </section> -->
       <section id="gallery" aria-label="Gallery section">
         <div class="gallery-container">
-          <h1>Gallery</h1>
           <div class="gallery-grid">
-            <a href="https://gadify.netlify.app" target="_blank" rel="noopener noreferrer" class="gallery-card">
+            <a
+              href="https://gadify.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="gallery-card"
+            >
               <div class="card-thumbnail">
-                <img src="https://gadify.netlify.app/og-image.png" alt="Gadify Project" onerror="this.src='https://via.placeholder.com/400x250?text=Gadify'">
+                <img
+                  src="/images/gadify.png"
+                  alt="Gadify Project"
+                  title="Gadify Project"
+                  width="50vw"
+                />
               </div>
               <div class="card-content">
-                <h3>Gadify</h3>
+                <h3>Gadify</h3> 
                 <p>gadify.netlify.app</p>
               </div>
             </a>
@@ -253,7 +257,7 @@
               free to contact me. I will get back to you as soon as possible.
             </p>
             <form
-             id="contact-form"
+              id="contact-form"
               method="POST"
               aria-label="Contact form to reach Manish Ghimire"
             >
@@ -282,8 +286,14 @@
                 required
                 aria-label="Your message"
               ></textarea>
-              <button id="button" type="submit" title="Send message to Manish Ghimire" value="Send Message">
-                Send Message</button>
+              <button
+                id="button"
+                type="submit"
+                title="Send message to Manish Ghimire"
+                value="Send Message"
+              >
+                Send Message
+              </button>
             </form>
           </div>
           <div class="contact-box">
@@ -308,51 +318,51 @@
     </main>
     <footer role="contentinfo">
       <div class="footer">
-      <div class="icons">
-        <a
-          href="https://www.facebook.com/manish.ghimire.16100"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit Manish Ghimire on Facebook"
-          ><i class="fa fa-facebook" aria-label="Facebook"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/manis.ghimire/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit Manish Ghimire on Instagram"
-        >
-          <i class="fa fa-instagram" aria-label="Instagram"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/manish-ghimire-618667225/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Connect with Manish Ghimire on LinkedIn"
-        >
-          <i class="fa fa-linkedin" aria-label="LinkedIn"></i>
-        </a>
-        <a
-          href="https://github.com/ManishGhimire101"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit Manish Ghimire's GitHub"
-          ><i class="fa fa-github" aria-label="GitHub"></i
-        ></a>
-        <a
-          href="mailto:ghimiremanish370@gmail.com"
-          target="_blank"
-          title="Email Manish Ghimire"
-          ><i class="fa fa-envelope" aria-label="Email"></i
-        ></a>
-      </div>
-      <p>
-        ©
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Manish Ghimire | All rights reserved
-      </p>
+        <div class="icons">
+          <a
+            href="https://www.facebook.com/manish.ghimire.16100"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit Manish Ghimire on Facebook"
+            ><i class="fa fa-facebook" aria-label="Facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/manis.ghimire/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit Manish Ghimire on Instagram"
+          >
+            <i class="fa fa-instagram" aria-label="Instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/manish-ghimire-618667225/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Connect with Manish Ghimire on LinkedIn"
+          >
+            <i class="fa fa-linkedin" aria-label="LinkedIn"></i>
+          </a>
+          <a
+            href="https://github.com/ManishGhimire101"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit Manish Ghimire's GitHub"
+            ><i class="fa fa-github" aria-label="GitHub"></i
+          ></a>
+          <a
+            href="mailto:ghimiremanish370@gmail.com"
+            target="_blank"
+            title="Email Manish Ghimire"
+            ><i class="fa fa-envelope" aria-label="Email"></i
+          ></a>
+        </div>
+        <p>
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Manish Ghimire | All rights reserved
+        </p>
       </div>
     </footer>
     <button class="back-to-top" onclick="scrollToTop()">↑</button>
@@ -399,31 +409,26 @@
       })();
     </script>
     <script>
-      const btn = document.getElementById('button');
+      const btn = document.getElementById("button");
       console.log(btn.value);
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
-           btn.innerHTML = 'Sending...';
-          
+          btn.innerHTML = "Sending...";
 
           emailjs.sendForm("service_iuatuje", "template_n4vqq8l", this).then(
             function () {
-             
               document.getElementById("contact-form").reset();
-              btn.innerHTML = 'Sent Successfully';
-             
+              btn.innerHTML = "Sent Successfully";
             },
             function (error) {
               alert("Failed to send message!");
               console.log(error);
-              btn.innerHTML = 'Resend Message';
-              
-            }
+              btn.innerHTML = "Resend Message";
+            },
           );
         });
-        
     </script>
   </body>
 </html>
