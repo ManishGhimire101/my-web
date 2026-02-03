@@ -785,10 +785,6 @@ textarea::placeholder {
     gap: 1.5rem;
   }
 
-  .gallery-container {
-    width: 90vw;
-  }
-
   .gallery-container h1 {
     font-size: 2rem;
   }
