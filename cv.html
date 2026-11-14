@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manish Ghimire – Frontend Web Developer CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e4eae6;--paper:#fff;--side:#f3f6f4;--name:#d7d9d8;--green:#4a6b5d;--ink:#2b2f2d;--text:#3a3f3c;--rule:#b9bfbb;--pad-t:env(safe-area-inset-top,0px);--pad-b:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#e4eae6}}
+*{box-sizing:border-box}
+html{scroll-padding-top:var(--pad-t)}
+body{margin:0;padding:calc(40px + var(--pad-t)) 16px calc(48px + var(--pad-b));background:var(--bg);color:var(--text);font-family:Lato,"Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.6}
+#cv{max-width:1100px;margin:0 auto;background:var(--paper);border-top:5px solid var(--green);display:grid;grid-template-columns:300px 1fr;box-shadow:0 2px 14px rgba(40,60,50,.15)}
+aside{background:var(--side);border-right:1px solid #e3e7e4}
+.name{background:var(--name);padding:56px 28px 36px}
+h1{margin:0;font:italic 700 50px/1.08 "Playfair Display",Georgia,serif;color:#111}
+.side-in{padding:0 28px 28px}
+.role{font:italic 600 21px "Playfair Display",Georgia,serif;color:var(--green);margin:22px 0 16px}
+.contact{list-style:none;margin:0 0 30px;padding:0}
+.contact li{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px;word-break:break-word}
+.contact svg{flex:none;width:17px;height:17px;margin-top:4px;fill:none;stroke:var(--green);stroke-width:1.8}
+h2{font:italic 700 25px "Playfair Display",Georgia,serif;color:var(--green);margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.side-in h2{font-size:23px;margin-top:30px}
+h3.sub{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin:14px 0 6px;padding-bottom:4px;border-bottom:1px dotted var(--rule);font-weight:700}
+ul.dots{list-style:none;margin:0;padding:0}
+ul.dots li{position:relative;padding-left:20px;margin:0 0 5px}
+ul.dots li:before{content:"";position:absolute;left:3px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.edu b,.job b{color:var(--ink);display:block}
+.edu{margin-bottom:14px}
+main{padding:40px 40px 36px 42px}
+.summary{margin:0 0 34px;font-size:16px;line-height:1.75;text-align:justify}
+.job{border-left:3px solid #dde2de;padding:2px 0 2px 18px;margin:0 0 24px}
+.job b{font-size:18px}
+.meta{color:var(--green);font-weight:700;margin:2px 0 6px}
+.job p{margin:0 0 6px}
+.job ul.dots li{margin-bottom:4px}
+a{color:inherit}
+.dl{max-width:1100px;margin:28px auto 0;text-align:center}
+.dl button{font:700 15px Lato,Arial,sans-serif;color:var(--green);background:transparent;border:1.5px solid var(--green);border-radius:4px;padding:10px 26px;cursor:pointer}
+.dl button:hover{text-decoration:underline}
+.dl button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.dl button:disabled{opacity:.55;cursor:default}
+#msg{min-height:22px;margin-top:10px;font-size:14px;color:var(--green)}
+@media (max-width:760px){#cv{grid-template-columns:1fr}main{padding:28px 22px}h1{font-size:42px}}
+@media print{body{background:#fff;padding:0}.dl{display:none}#cv{box-shadow:none}}
+</style>
+</head>
+<body>
+<div id="cv">
+  <aside>
+    <div class="name"><h1>Manish<br>Ghimire</h1></div>
+    <div class="side-in">
+      <div class="role">Frontend Web Developer</div>
+      <ul class="contact">
+        <li><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Bhadrapur, Jhapa, Nepal</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+977 9842515352</li>
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>ghimiremanish370@gmail.com</li>
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v6M8 7.5v.01M12 16v-6M12 12.5a2.5 2.5 0 0 1 5 0V16"/></svg>linkedin.com/in/manish-ghimire-618667225</li>
+      </ul>
+
+      <h2>Major Skills</h2>
+      <h3 class="sub">Frontend</h3>
+      <ul class="dots"><li>HTML / CSS / JavaScript</li><li>React / Vue.js</li><li>Bootstrap</li></ul>
+      <h3 class="sub">Mobile</h3>
+      <ul class="dots"><li>Flutter</li></ul>
+      <h3 class="sub">Backend</h3>
+      <ul class="dots"><li>Node.js</li><li>Django / Flask</li><li>Firebase</li></ul>
+      <h3 class="sub">Languages</h3>
+      <ul class="dots"><li>JavaScript / Java / Python</li><li>PowerShell / Bash</li></ul>
+
+      <h2>Also Familiar With</h2>
+      <p style="margin:0">Git, npm, Visual Studio Code</p>
+
+      <h2>Education</h2>
+      <div class="edu"><b>Bachelor in Computer Application (BCA)</b>Mechi Multiple Campus, Tribhuvan University<br>Bhadrapur, Jhapa<br>Present</div>
+
+      <h2>Portfolio</h2>
+      <ul class="dots"><li>github.com/ManishGhimire101</li><li>manishghimire.info.np</li></ul>
+    </div>
+  </aside>
+
+  <main>
+    <p class="summary">I am a Frontend Web Developer from Nepal, currently pursuing a Bachelor’s degree in Computer Applications at Mechi Multiple College, Jhapa. I create responsive, user-friendly websites that help organizations and businesses grow, with hands-on experience in creating backend-based websites and Flutter mobile apps.</p>
+
+    <h2>Academic Projects</h2>
+    <div class="job">
+      <b>EduConnect – A School and College Portal (IMS)</b>
+      <div class="meta">A Web based project for school and college / 2026</div>
+      <p>Web platform that brings library management, school and college operations and an information management system into one place.</p>
+      <ul class="dots">
+        <li>Built with Node.js, Express and Prisma, using SQLite in development and PostgreSQL in production.</li>
+        <li>Library, School Portal, College Portal and IMS modules share one login, role-based access control and database.</li>
+        <li>Role-based dashboards for administrators, teachers, students and parents.</li>
+        <li>Document hub with version history, full-text search and audit logs.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <b>Gadify – Nepal Public Transportation Locator</b>
+      <div class="meta">Flutter Mobile App, Firebase Backend / gadify.netlify.app</div>
+      <p>Mobile app for locating public transportation in Nepal (यात्रा साथी).</p>
+      <ul class="dots">
+        <li>Built as a Flutter mobile app with Firebase as the backend.</li>
+        <li>Web version hosted at gadify.netlify.app.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <b>Social Media Auto-Posting Tool</b>
+      <div class="meta">Python Project</div>
+      <p>Python automation project that automatically posts content to social media platforms such as Instagram and Facebook.</p>
+    </div>
+    <div class="job">
+      <b>Personal Portfolio Website</b>
+      <div class="meta">HTML5, CSS3, JavaScript / manishghimire.info.np</div>
+      <p>Responsive portfolio website presenting my work and background as a web developer.</p>
+      <ul class="dots">
+        <li>Home, About me, Gallery and Contact me sections with smooth navigation.</li>
+        <li>Contact section with a message form, phone, email and location details.</li>
+        <li>Links to my GitHub, LinkedIn, Facebook and Instagram profiles.</li>
+        <li>Search-engine and social-sharing meta tags for better visibility.</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+<div class="dl">
+  <button id="dlbtn" type="button">Download CV</button>
+  <div id="msg" role="status"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+  var btn=document.getElementById('dlbtn'),msg=document.getElementById('msg');
+  var dl=null;
+  if(window.claude&&claude.use){claude.use('downloads').then(function(d){dl=d;}).catch(function(){});}
+  function say(t){msg.textContent=t;}
+  btn.addEventListener('click',async function(){
+    btn.disabled=true;say('Preparing PDF…');
+    try{
+      if(document.fonts&&document.fonts.ready){await document.fonts.ready;}
+      var cv=document.getElementById('cv');
+      var canvas=await html2canvas(cv,{scale:2,useCORS:true,backgroundColor:'#ffffff',windowWidth:1100,
+        onclone:function(doc){var c=doc.getElementById('cv');c.style.width='1100px';c.style.maxWidth='1100px';c.style.boxShadow='none';}});
+      var w=canvas.width/2,h=canvas.height/2;
+      var pdf=new window.jspdf.jsPDF({unit:'px',format:[w,h],orientation:w>h?'l':'p',hotfixes:['px_scaling'],compress:true});
+      pdf.addImage(canvas.toDataURL('image/jpeg',0.95),'JPEG',0,0,w,h);
+      var blob=pdf.output('blob');
+      if(dl){
+        await dl.save({filename:'Manish_Ghimire_CV.pdf',data:blob});
+        say('CV saved.');
+      }else{
+        say('Direct download is not available here, so the print dialog is opening. Choose “Save as PDF”.');
+        window.print();
+      }
+    }catch(e){
+      say(e&&e.code==='declined'?'Download cancelled.':'Could not create the PDF. Please try again.');
+    }finally{btn.disabled=false;}
+  });
+})();
+</script>
+</body>
+</html>
